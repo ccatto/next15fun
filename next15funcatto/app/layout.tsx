@@ -28,12 +28,45 @@ export default function RootLayout({
       <body
         className={`flex flex-col min-h-screen absolute m-0 w-full overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-blue-800 text-white p-4 text-center h-24">
+        <header className="bg-blue-800 text-white text-center h-28">
           <h1 className="text-2xl font-bold">Catto Header</h1>
         </header>
-        <main className="flex-grow p-6 bg-gray-800 ">
+
+        {/* <main className="flex-grow bg-gray-800 ">
           {children}
-        </main>
+        </main> */}
+
+        <div className="flex flex-grow bg-red-400 text-black text-center">
+          <div className="flex-[1] bg-gradient-to-r from-gray-500 to-gray-900"></div>
+          <main className="h-full w-full flex-[98] bg-gray-200 dark:bg-gray-400">
+            <h1>simple</h1>
+            <div className="bg-blue-600 h-96">
+              <h1>first</h1>
+            </div>
+            <div className="bg-emerald-300 h-48 text-black">
+              <h1>second</h1>
+            </div>
+            <div className="bg-pink-900 h-48 text-white">
+              <h1>third</h1>
+            </div>
+            <div className="bg-blue-700 h-96 text-white">
+              <h1>third</h1>
+            </div>
+          </main>
+          <div className="flex-[1] bg-gradient-to-r from-gray-900 to-gray-500"></div>
+        </div>
+
+        {/* <div className="flex-grow bg-red-400">
+          <div className="flex-[10] bg-gradient-to-r from-gray-500 to-gray-900"></div>
+          <main className="h-full w-full flex-[80] bg-gray-200 dark:bg-gray-700">
+            {children} 
+          </main>
+          <div className="flex-[10] bg-gradient-to-r from-gray-900 to-gray-500"></div>
+        </div> */}
+
+
+
+
         <footer className="bg-gray-600 text-white p-4 text-center">
           <p className="text-sm">© {new Date().getFullYear()}{' '}Catto Next 15 Simple Site footer</p>
         </footer>

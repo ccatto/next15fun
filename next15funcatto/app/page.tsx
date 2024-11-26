@@ -2,12 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-pink-600 m-3">
+    <div className="bg-pink-600">
       <div className="bg-blue-600 h-96">
         <h1>first</h1>
       </div>
       <div className="bg-emerald-300 h-48 text-black">
         <h1>second</h1>
+      </div>
+      <div className="bg-pink-900 h-48 text-white">
+        <h1>third</h1>
+      </div>
+      <div className="bg-blue-700 h-96 text-white">
+        <h1>third</h1>
       </div>
       {/* <h1>middle </h1> */}
     </div>
