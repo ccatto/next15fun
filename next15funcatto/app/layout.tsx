@@ -26,9 +26,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`flex flex-col min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header className="bg-blue-800 text-white p-4 text-center">
+          <h1 className="text-2xl font-bold">Catto Header</h1>
+        </header>
+        <main className="flex-grow p-6">
+          {children}
+        </main>
+        <footer className="bg-gray-600 text-white p-4 text-center">
+          <p className="text-sm">© {new Date().getFullYear()}{' '}Catto Next 15 Simple Site footer</p>
+        </footer>
       </body>
     </html>
   );

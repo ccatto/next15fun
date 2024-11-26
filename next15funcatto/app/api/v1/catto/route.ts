@@ -1,5 +1,4 @@
 // GET app/api/v1/catto
-
 export async function GET(request: Request) {
   return new Response('Hello Catto, Next.js 15!');
 }
