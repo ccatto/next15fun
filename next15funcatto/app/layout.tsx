@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`flex flex-col min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-blue-800 text-white p-4 text-center">
+        <header className="bg-blue-800 text-white p-4 text-center h-24">
           <h1 className="text-2xl font-bold">Catto Header</h1>
         </header>
         <main className="flex-grow p-6">
